@@ -2,7 +2,8 @@
 .hero {
     height: 100vh;
     display: flex;
-    background-color: #191501; /* Deep blue background */
+    background-color: #283618; /* Deep Olive background */
+    color: #fefae0; /* Soft Cream text */
 }
 
 .hero-left {
@@ -17,12 +18,12 @@
 
 .hero-left h2 {
     font-size: 26px;
-    color: white;
+    color: #fefae0; /* Soft Cream text */
     font-weight: 600;
 }
 
 .hero-left p {
-    color: #fdfffc; /* Light text */
+    color: #fefae0; /* Soft Cream text */
     font-size: 100px;
     font-weight: 700;
 }
@@ -37,7 +38,7 @@
     width: 105px;
 }
 
-.hero-latest-btn{
+.hero-latest-btn {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -46,10 +47,17 @@
     height: 70px;
     border-radius: 75px;
     margin-top: 30px;
-    background: #f25f5c; /* Red button */
-    color: white;
+    background: #606c38; /* Dark Green background for the button */
+    color: #fefae0; /* Soft Cream text */
     font-size: 22px;
     font-weight: 500;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+}
+
+.hero-latest-btn:hover {
+    background-color: #fefae0; /* Soft Cream background on hover */
+    color: #283618; /* Deep Olive text on hover */
 }
 
 .hero-right {
