@@ -1,0 +1,68 @@
+.new-Collections {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    gap: 20px;
+    margin-bottom: 50px;
+    background-color: #fefae0; /* Soft Cream background */
+    padding: 50px 20px;
+    border-radius: 20px; /* Rounded corners for a modern look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    width: 100%;
+    max-width: 1200px; /* Constrain the width for better alignment */
+    margin: 0 auto; /* Center the section */
+}
+
+.new-Collections h1 {
+    color: #283618; /* Deep Olive for the heading */
+    font-size: 48px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.new-Collections hr {
+    width: 200px;
+    height: 4px; /* Slightly thinner for a sleek look */
+    border-radius: 10px;
+    background: #606c38; /* Dark Green for the divider */
+    margin-bottom: 40px; /* Add some space after the divider */
+    border: none; /* Remove default border */
+}
+
+.collections {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    justify-content: space-between; /* Evenly space out the items */
+    margin-top: 50px;
+    gap: 30px; /* Consistent gap between items */
+    width: 100%; /* Ensure the grid takes up the full width */
+}
+
+.collection-item {
+    flex: 1 1 calc(25% - 30px); /* Four items per row, adjust based on gap */
+    background-color: #fefae0; /* Soft Cream background for collection items */
+    border-radius: 15px; /* Rounded corners for items */
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    max-width: calc(25% - 30px); /* Ensure items don't exceed their space */
+}
+
+.collection-item img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.collection-item:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+.collection-item img:hover {
+    transform: scale(1.05); /* Slight zoom on image hover */
+}

@@ -1,0 +1,56 @@
+.offers {
+    width: 65%;
+    height: 60vh;
+    display: flex;
+    margin: auto;
+    border-radius: 10px;
+    padding: 0px 140px;
+    margin-bottom: 150px;
+    background: linear-gradient(90deg, rgba(96,108,56,0.7) 0%, rgba(96,108,56,0.7) 35%, rgba(96,108,56,0.7) 100%); /* Dark Green gradient with transparency */
+}
+
+.offers-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.offers-left h1 {
+    color: #fefae0; /* Soft Cream for the heading text */
+    font-size: 60px; /* Adjusted font size for balance */
+    font-weight: 700; /* Bold and impactful */
+}
+
+.offers-left p {
+    color: #fefae0; /* Soft Cream for the paragraph text */
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.offers-left button {
+    width: 282px;
+    height: 70px;
+    border-radius: 35px;
+    background: #283618; /* Deep Olive for the button background */
+    border: none;
+    margin-top: 30px;
+    color: #fefae0; /* Soft Cream for button text */
+    font-size: 22px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.offers-left button:hover {
+    background: #fefae0; /* Soft Cream background on hover */
+    color: #283618; /* Deep Olive text on hover */
+}
+
+.offers-right {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-top: 50px;
+}
