@@ -44,7 +44,7 @@
 
 .collection-item {
     flex: 1 1 calc(25% - 30px); /* Four items per row, adjust based on gap */
-    background-color: #fefae0; /* Soft Cream background for collection items */
+    background-color: #b8af72; /* Soft Cream background for collection items */
     border-radius: 15px; /* Rounded corners for items */
     overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
