@@ -1,58 +1,61 @@
 /* Hero.css */
 .hero {
-    height: 100vh;
+    height: 100vh; /* Full viewport height */
     display: flex;
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Center the content vertically */
     background-color: #283618; /* Deep Olive background */
     color: #fefae0; /* Soft Cream text */
+    text-align: center; /* Center align text */
+    padding: 0 20px; /* Add some side padding for mobile responsiveness */
+    position: relative; /* To handle any possible overlay or positioning */
+    overflow: hidden; /* To handle any overflowing content */
 }
 
 .hero-left {
-    flex: 1;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center; /* Center content horizontally */
+    justify-content: center; /* Center content vertically */
     gap: 20px;
-    padding-left: 180px;
-    line-height: 1.1;
+    max-width: 800px; /* Constrain the width to make it centered and readable */
+    margin: auto;
 }
 
 .hero-left h2 {
-    font-size: 26px;
+    font-size: 20px; /* Smaller, subtle subheading */
     color: #fefae0; /* Soft Cream text */
-    font-weight: 600;
+    font-weight: 400; /* Light font-weight for a modern look */
+    text-transform: uppercase; /* Apple-style uppercase text */
+    letter-spacing: 1px; /* Add spacing between letters */
 }
 
 .hero-left p {
     color: #fefae0; /* Soft Cream text */
-    font-size: 100px;
-    font-weight: 700;
+    font-size: 64px; /* Large, impactful font size */
+    font-weight: 700; /* Bold font for emphasis */
+    line-height: 1.2; /* Adjust line height for better readability */
+    margin-bottom: 30px; /* Space below the heading */
 }
 
 .hero-hand-icon {
-    display: flex; 
-    align-items: center;
-    gap: 20px;
-}
-
-.hero-hand-icon img {
-    width: 105px;
+    display: none; /* Optional: Hiding this if you want a simpler look */
 }
 
 .hero-latest-btn {
-    display: flex;
+    display: inline-flex;
     justify-content: center;
     align-items: center;
-    gap: 15px;
-    width: 310px;
-    height: 70px;
-    border-radius: 75px;
-    margin-top: 30px;
-    background: #606c38; /* Dark Green background for the button */
+    padding: 15px 40px; /* Adjust padding for a sleek button */
+    border-radius: 50px; /* Rounded corners for a modern look */
+    background: #606c38; /* Dark Green background */
     color: #fefae0; /* Soft Cream text */
-    font-size: 22px;
+    font-size: 18px;
     font-weight: 500;
+    text-transform: uppercase; /* Consistent uppercase for buttons */
     transition: background-color 0.3s ease, color 0.3s ease;
     cursor: pointer;
+    border: none;
 }
 
 .hero-latest-btn:hover {
@@ -61,8 +64,21 @@
 }
 
 .hero-right {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: none; /* Hiding the right section to keep the focus on text and button */
+}
+
+/* Media Query for Smaller Screens */
+@media (max-width: 768px) {
+    .hero-left h2 {
+        font-size: 16px; /* Reduce size for smaller screens */
+    }
+
+    .hero-left p {
+        font-size: 48px; /* Adjust headline size for mobile */
+    }
+
+    .hero-latest-btn {
+        padding: 10px 30px; /* Adjust button padding for mobile */
+        font-size: 16px; /* Reduce button text size */
+    }
 }
