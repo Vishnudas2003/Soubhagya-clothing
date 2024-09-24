@@ -1,0 +1,85 @@
+/* Footer Styles */
+.footer {
+    background-color: #283618; /* Deep Olive background */
+    color: #fefae0; /* Soft Cream text */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 20px;
+    text-align: center;
+    width: 100%;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.footer-logo img {
+    height: 50px;
+}
+
+.footer-logo p {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #fefae0; /* Soft Cream text */
+    text-transform: uppercase;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    display: flex;
+    gap: 30px;
+}
+
+.footer-links li a {
+    text-decoration: none;
+    color: #fefae0; /* Soft Cream for the links */
+    font-size: 16px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.footer-links li a:hover {
+    color: #dda15e; /* Slight hover effect for better interactivity */
+}
+
+.footer-social-icons {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.footer-icons-container img {
+    width: 30px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.footer-icons-container img:hover {
+    transform: scale(1.1); /* Slight zoom on hover */
+}
+
+.footer-copyright {
+    margin-top: 20px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.footer-copyright hr {
+    border: none;
+    height: 1px;
+    background-color: #fefae0; /* Soft Cream line */
+    margin-bottom: 10px;
+}
+
+.footer-copyright p {
+    font-size: 14px;
+    color: #fefae0; /* Soft Cream text */
+    margin: 0;
+}
