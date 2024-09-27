@@ -68,3 +68,45 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+soubhagya-clothing/
+│
+├── backend/                      # Backend folder (Express.js)
+│   ├── controllers/              # Controller functions for handling logic
+│   │   ├── productController.js  # Logic for product management
+│   │   ├── authController.js     # Logic for authentication
+│   │   └── orderController.js    # Logic for order processing
+│   ├── models/                   # Database models
+│   │   ├── User.js               # User model
+│   │   ├── Product.js            # Product model
+│   │   └── Order.js              # Order model
+│   ├── routes/                   # API routes
+│   │   ├── productRoutes.js      # Routes for products
+│   │   ├── authRoutes.js         # Routes for authentication
+│   │   └── orderRoutes.js        # Routes for orders
+│   ├── config/                   # Configuration files
+│   │   └── db.js                 # Database connection file
+│   ├── middleware/               # Middleware functions
+│   ├── server.js                 # Main server file
+│   └── .env                      # Environment variables
+│
+├── frontend/                     # Frontend folder (Next.js)
+│   ├── components/               # Reusable React components
+│   │   ├── Header.js             # Header component
+│   │   ├── Footer.js             # Footer component
+│   │   ├── ProductList.js        # Product list component
+│   │   └── ProductCard.js        # Product card component
+│   ├── pages/                    # Next.js pages (each file represents a route)
+│   │   ├── index.js              # Home page
+│   │   ├── products.js           # Products page
+│   │   ├── product/[id].js       # Dynamic product detail page
+│   │   ├── checkout.js           # Checkout page
+│   │   └── api/                  # API routes in Next.js
+│   ├── styles/                   # Global and component-specific styles
+│   │   └── globals.css           # Global CSS
+│   ├── public/                   # Public assets (images, videos, etc.)
+│   ├── next.config.js            # Next.js configuration
+│   ├── package.json              # NPM dependencies
+│   └── .env.local                # Environment variables for frontend
+│
+└── README.md                     # Project documentation

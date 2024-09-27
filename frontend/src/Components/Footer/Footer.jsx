@@ -7,7 +7,7 @@ import whatsapp_icon from '../Assets/whatsapp_icon.png'
 
 export const Footer = () => {
   return (
-    <div className='footer'>Footer
+    <div className='footer'>
     <div className="footer-logo">
         <img src={footer_logo} alt="footer-logo" />
         <p>SHOPPER</p>
