@@ -11,4 +11,5 @@ export const ShopCategory = (props) => {
       <img src={props.banner} alt="" />
     </div>
   )
+  
 }
